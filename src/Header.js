@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X, Instagram, Twitter, Facebook, Heart } from "lucide-react";
+import { Menu, X, Instagram, Twitter, Facebook } from "lucide-react";
 import logo from './assets/jatinLogo.jpeg'
 
 export default function PortfolioHeader() {
