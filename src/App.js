@@ -15,30 +15,29 @@ function App() {
   return (
     <div className="min-h-screen w-screen  flex flex-col bg-green-500">
       <Header />
-      <div className=" h-auto w-screen bg-red-500 flex justify-center items-center overflow-hidden ">
+      <div className=" h-auto w-screen  flex justify-center items-center overflow-hidden ">
         <img src={headerimager} alt="portfolio" className=" object-contain" />
       </div>
-      <div className=" w-screen bg-red-500 flex justify-center items-center overflow-hidden">
-        <img src={products} alt="portfolio" className=" object-contain" />
+      <div className=" w-screen  flex justify-center items-center overflow-hidden">
+        <img src={products} alt="portfolio" className=" w-screen" />
         
       </div>
-      <div className=" w-screen bg-red-500 flex justify-center items-center overflow-hidden">
-        <img src={socialMedia} alt="portfolio" className=" object-contain" />
+      <div className=" w-screen flex justify-center items-center overflow-hidden">
+        <img src={socialMedia} alt="portfolio" className=" w-screen" />
       </div>
-      <div className=" w-screen bg-red-500 flex justify-center items-center overflow-hidden">
-        <img src={firstSocial} alt="portfolio" className=" object-contain" />
+      <div className=" w-screen  flex justify-center items-center overflow-hidden">
+        <img src={firstSocial} alt="portfolio" className=" w-screen" />
       </div>
-      <div className=" w-screen bg-red-500 flex justify-center items-center overflow-hidden">
-        <img src={secondSocial} alt="portfolio" className=" object-contain" />
+      <div className=" w-screen  flex justify-center items-center overflow-hidden">
+        <img src={secondSocial} alt="portfolio" className=" w-screen" />
       </div>
       
-      <div className=" w-screen bg-red-500 flex justify-center items-center overflow-hidden">
-        <img src={packageDesign} alt="portfolio" className=" object-contain" />
+      <div className=" w-screen  flex justify-center items-center overflow-hidden">
+        <img src={packageDesign} alt="portfolio" className=" w-screen" />
         
       </div>
-      <div className=" w-screen bg-red-500 flex justify-center items-center overflow-hidden">
-        <img src={package01} alt="portfolio" className=" object-contain" />
-        
+      <div className=" w-screen  flex justify-center items-center overflow-hidden">
+        <img src={package01} alt="portfolio" className=" w-screen" />
       </div>
 
       <Footer />
