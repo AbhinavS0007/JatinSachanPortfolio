@@ -32,11 +32,12 @@ export default function PortfolioHeader() {
         <div className="flex items-center gap-3">
 
           {/* BeLogo always visible */}
-          <img
+          <a href="https://www.behance.net/jatinsachan24"><img
             src={Belogo}
             alt="Be Profile"
             className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-gray-300"
-          />
+          /></a>
+          
 
           {/* Desktop Social Icons */}
           <div className="hidden md:flex items-center gap-3">
