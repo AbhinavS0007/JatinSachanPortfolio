@@ -28,16 +28,18 @@ export default function PortfolioHeader() {
           </div>
         </div>
 
-        {/* Desktop Right Section */}
-        <div className="hidden md:flex items-center gap-4">
+        {/* Right Section */}
+        <div className="flex items-center gap-3">
 
+          {/* BeLogo always visible */}
           <img
             src={Belogo}
-            alt="profile"
-            className="w-10 h-10 rounded-full object-cover ring-2 ring-gray-300"
+            alt="Be Profile"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-gray-300"
           />
 
-          <div className="flex items-center gap-3">
+          {/* Desktop Social Icons */}
+          <div className="hidden md:flex items-center gap-3">
             {[Twitter, Instagram, Facebook].map((Icon, i) => (
               <a
                 key={i}
@@ -49,31 +51,33 @@ export default function PortfolioHeader() {
                 <Icon size={18} />
               </a>
             ))}
+
+            <a
+              href="https://www.instagram.com/jatinsachan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-full font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
+            >
+              Let's Connect ❤️
+            </a>
           </div>
 
-          <a
-            href="https://www.instagram.com/jatinsachan"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-full font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105"
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-gray-800"
+            onClick={() => setIsOpen(!isOpen)}
           >
-            Let's Connect ❤️
-          </a>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-gray-800"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Dropdown */}
       <div
         className={`md:hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-96 opacity-100 py-4" : "max-h-0 opacity-0 overflow-hidden"
+          isOpen
+            ? "max-h-96 opacity-100 py-4"
+            : "max-h-0 opacity-0 overflow-hidden"
         } bg-white/90 backdrop-blur-md border-t`}
       >
         <div className="flex flex-col items-center gap-4">
