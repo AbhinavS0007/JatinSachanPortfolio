@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="min-h-screen w-screen  flex flex-col ">
       <Header />
-      <div className=" h-auto w-screen  flex justify-center items-center overflow-hidden ">
+      <div className=" h-auto mt-16 w-screen  flex justify-center items-center overflow-hidden ">
         <img src={headerimager} alt="portfolio" className=" object-contain" />
       </div>
       <div className=" w-screen  flex justify-center items-center overflow-hidden">
