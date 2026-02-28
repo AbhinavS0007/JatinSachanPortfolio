@@ -32,6 +32,11 @@ export default function Footer() {
         <div className="">
           <h3 className="text-white font-semibold mb-4">Navigation</h3>
           <ul className="space-y-2">
+          <li>
+              <a href="https://www.behance.net/jatinsachan24" className="hover:text-white transition">
+                Behance Profile
+              </a>
+            </li>
             <li>
               <a href="#home" className="hover:text-white transition">
                 Home
